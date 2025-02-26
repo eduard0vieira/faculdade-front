@@ -45,14 +45,9 @@ header {
 }
 
 .header-right button:hover {
-  color: #ccc; /* Altere para uma cor de destaque ao passar o mouse */
-  transform: scale(1.1); /* Dá um leve efeito de aumento ao passar o mouse */
+  color: #ccc;
+  transform: scale(1.1); 
 }
-
-
-/* Header alterado */
-
-/* Header */
 header {
   display: flex;
   justify-content: space-between;
@@ -100,4 +95,83 @@ nav ul {
 nav ul li a {
   text-decoration: none;
   color: #333;
+}
+
+.about {
+  padding: 54px 120px 42px;
+  max-width: 486px;
+}
+
+.about h2 {
+  font-weight: bold;
+  font-size: 64px;
+  color: #25282b;
+  margin-bottom: 32px;
+}
+
+.about p {
+  font-size: 24px;
+  line-height: 1.5;
+  color: #828282;
+  margin-bottom: 32px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.primary {
+  background-color: #2c2b2b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 24px;
+  height: 42px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.secondary {
+  background-color: transparent;
+  border: 2px solid #2c2b2b;
+  color: #2c2b2b;
+  border-radius: 8px;
+  padding: 8px 24px;
+  height: 42px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.about .buttons .primary:hover {
+  color: #ccc;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.about .buttons .secondary:hover {
+  color: #fff;
+  background-color: #2c2b2b;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.projects h2 {
+  display: inline-block;
+  position: absolute;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 80px;
+}
+
+.projects h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 2px;
+  background-color: black;
 }
