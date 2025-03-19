@@ -41,7 +41,7 @@
       </section>
 
       <section class="projects">
-        <h2>Projetos</h2>
+        <h2 class="underline">Projetos</h2>
 
         <!-- Card 1  -->
 
@@ -85,10 +85,46 @@
       </section>
 
       <section class="contato">
-        <h2>Contato</h2>
+        <h2 class="underline">Contato</h2>
+
+        <form class="form-contact" type="submit" method="POST">
+
+          <div class="form-input">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="Ex: Carlos Eduardo" required>
+          </div>
+
+          <div class="form-input">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" placeholder="Ex: gmail@gmail.com" required>
+          </div>
+
+          <div class="form-input">
+            <label for="msg">Mensagem:</label>
+            <textarea id="msg" placeholder="Sua mensagem aqui" required></textarea>
+          </div>
+
+          <div class="form-button">
+            <button class="primary">Enviar</button>
+          </div>
+        </form>
       </section>
 
+        <footer>
 
+          <div class="icons">
+            <a href="https://www.instagram.com/eduard0vieira"><img src="./assets/img/instagram-icon.png" alt="Logo do instagram"></a>
+            <a href="https://www.linkedin.com/in/eduard0vieira/"><img src="./assets/img/linkedin-icon.png" alt="Logo do instagram"></a>
+            <a href=""><img src="./assets/img/email-icon.png" alt="Logo do instagram"></a>
+          </div>
+
+          <span>Mano Brown 2025</span>
+      
+          <div class="footer-wave">
+            <img src="./assets/img/footer-wave.png" alt="">
+          </div>
+
+        </footer>
     </main>
   </body>
   <script src="script.js"></script>

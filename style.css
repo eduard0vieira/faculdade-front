@@ -175,7 +175,7 @@ nav ul li a {
   background-color: black;
 }
 
-.projects {
+.projects, .contato {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -295,5 +295,106 @@ nav ul li a {
 .card-right2 button:hover {
   transform: scale(1.1);
   transition: transform 0.3s;
+}
+
+.contato h2 {
+  display: inline-block;
+  position: relative;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 80px;
+  margin: 0px;
+}
+
+.contato h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 2px;
+  background-color: black;
+}
+
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  gap: 24px;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column; 
+}
+
+.form-input label {
+  margin-bottom: 8px;
+  color: #25282b;
+  font-size: 16px
+}
+
+.form-input input {
+  background-color: #E8ECF4;
+  border-radius: 4px;
+  border: solid 1px #E8ECF4;
+  padding-left: 8px;
+  line-height: 40px;
+  
+}
+
+.form-input text {
+  background-color: #E8ECF4;
+}
+
+.form-input textarea {
+  background-color: #E8ECF4;
+  border-radius: 4px;
+  border: solid 1px #E8ECF4;
+  height: 160px;
+  line-height: 16px;
+}
+
+.form-input input:focus,
+.form-input textarea:focus {
+  outline: none !important;
+  border-color: #25282b;
+  color: #25282b;
+}
+
+.primary:hover {
+  color: #ccc;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.form-button {
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 8px;
+  color: #2c2b2c;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icons {
+  gap: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+}
+
+footer span {
+  opacity: 0.3;
+  padding: 32px;
+}
+
+.footer-wave {
+    position: relative;
 }
 
